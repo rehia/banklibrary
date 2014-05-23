@@ -1,0 +1,13 @@
+!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,fitsharp\fit.dll %p}
+!define TEST_RUNNER {fitsharp\Runner.exe}
+!path D:\Dev\dotNET\Projets\TDD Demo\BankLibrary\BankLibraryFit\bin\Debug\BankLibraryFit.dll
+
+Voilà les tests de dépôt sur un compte bancaire
+
+!|BankLibraryFit.BankAccountFixture|
+|Balance|Deposit|Balance?|
+|0|1|1|
+
+!|BankLibraryFit.BankAccountFixture|
+|Balance|Deposit|Deposit|Balance?|
+|0|4|5|9|
